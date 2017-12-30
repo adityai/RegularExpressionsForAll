@@ -1,10 +1,7 @@
 # Regular Expressions for all
 
-https://circleci.com/gh/adityai/RegularExpressionsForAll/tree/master.svg?style=shield
 
-
-[![Build Status](https://circleci.com/gh/adityai/RegularExpressionsForAll/tree/master.svg?style=shield](https://circleci.com/gh/adityai/RegularExpressionsForAll/tree/master.svg?style=shield)
-
+[![Build Status](https://circleci.com/gh/adityai/RegularExpressionsForAll/tree/master.svg?style=shield)](https://circleci.com/gh/adityai/RegularExpressionsForAll) 
 
 ## Introduction:
 ##### The 'Regular Expressions for all' project aims to catalog regular expressions cheat sheet(s) and sample code in different programming languages to demonstrate how to use them in code.
