@@ -10,6 +10,8 @@ import junit.framework.TestSuite;
 public class AppTest 
     extends TestCase
 {
+	private static App app = new App();
+	private static final String WORD_PATTERN = "\\w+";
     /**
      * Create the test case
      *
@@ -34,5 +36,12 @@ public class AppTest
     public void testApp()
     {
         assertTrue( true );
+    }
+    
+    public void testPrintEachWord(){
+    	String input = "Happy, Joyful, Pleasant, Overjoyed, Fantastic, Great, Monkey, Energize, Excited";
+    	String actual = app.printEachWord(input);
+    	String expected = "Happy\nJoyful\nPleasant\nOverjoyed\nFantastic\nGreat\nMonkey\nEnergize\nExcited\n";
+    	assertEquals(expected, actual);
     }
 }

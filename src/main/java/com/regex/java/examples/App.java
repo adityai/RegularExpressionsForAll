@@ -14,19 +14,18 @@ public class App
 	
     public static void main( String[] args )
     {
-        printEachWord(inputString);
+        System.out.println(printEachWord(inputString));
     }
     
-    public static void printEachWord(String input) {
+    public static String printEachWord(String input) {
     	String regexPatternString = "\\w+";
         Pattern pattern = Pattern.compile(regexPatternString);
         Matcher matcher = pattern.matcher(input);
+        StringBuilder stringBuilder = new StringBuilder();
 
         while (matcher.find()) {
-            System.out.print("{\"StartIndex\": \"" + matcher.start() + "\", ");
-            System.out.print("\"EndIndex\": \"" + matcher.end() + "\"\t");
-            System.out.println("\"Word\" :" + matcher.group() + "\"}");
-            System.out.println("------------------");
+            stringBuilder.append(matcher.group()).append("\n");
         }
+        return stringBuilder.toString();
     }
 }
