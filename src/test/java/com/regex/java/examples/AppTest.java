@@ -21,14 +21,6 @@ public class AppTest
     {
         super( testName );
     }
-
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
     
     public void testPrintEachWord(){
     	String input = "Happy, Joyful, Pleasant, Overjoyed, Fantastic, Great, Monkey, Energize, Excited";
