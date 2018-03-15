@@ -42,3 +42,6 @@ jobs:
 
       - store_test_results:
         path: test-results
+
+  - step:
+      path: test-results
