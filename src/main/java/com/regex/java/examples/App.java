@@ -42,4 +42,16 @@ public class App
         }
     	return stringBuilder.toString();
     }
+    
+    public static String printPerShorthandCharacter(String input, String shortHandCharacter) {
+        Pattern pattern = Pattern.compile(shortHandCharacter);
+        Matcher matcher = pattern.matcher(input);
+        StringBuilder stringBuilder = new StringBuilder();
+
+        while (matcher.find()) {
+            stringBuilder.append(matcher.group()).append(" ");
+        }
+    	return stringBuilder.toString();
+    }
+
 }
