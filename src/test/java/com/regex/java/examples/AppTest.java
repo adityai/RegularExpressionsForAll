@@ -35,4 +35,11 @@ public class AppTest
     	String expected = "13 6";
     	assertTrue(expected.equals(actual.trim()));
     }
+    
+    public void testPrintPerShorthandCharacter_1(){
+    	String inputStringWithDigits = "The age of the universe is about 13.6 billion years";
+    	String actual = app.printEachNumber(inputStringWithDigits);
+    	String expected = "13 6";
+    	assertTrue(expected.equals(actual.trim()));
+    }
 }
