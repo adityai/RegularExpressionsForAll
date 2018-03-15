@@ -28,4 +28,11 @@ public class AppTest
     	String expected = "Happy\nJoyful\nPleasant\nOverjoyed\nFantastic\nGreat\nMonkey\nEnergize\nExcited\n";
     	assertEquals(expected, actual);
     }
+    
+    public void testPrintEachNumber(){
+    	String inputStringWithDigits = "The age of the universe is about 13.6 billion years";
+    	String actual = app.printEachNumber(inputStringWithDigits);
+    	String expected = "13 6";
+    	assertTrue(expected.equals(actual.trim()));
+    }
 }
